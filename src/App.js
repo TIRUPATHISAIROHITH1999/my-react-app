@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+//--> css
+import "./App.css";
 
-function App() {
+// src/App.js
+import React, { useState } from 'react';
+import { Provider } from 'react-redux';
+import DataFetcher from './UserInterfaceComponents/FullView/DataFetcher';
+import Wishlist from './UserInterfaceComponents/FullView/Wishlist';
+import store from './ReduxStateManagementAndDataFetch/store';
+import FullViewInterface from './UserInterfaceComponents/FullView/FullViewInterface';
+import LoginAndCred from './UserInterfaceComponents/CredentialPage/LoginAndCred';
+
+// states to thorw in redux
+
+
+const App = () => {
+  const [loginDis,setLoginDis]=useState(true);;
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      {loginDis && <LoginAndCred value={{setLoginDis}}/>}
+      {!loginDis && <FullViewInterface/>}
+      
+     
+    </Provider>
   );
-}
+};
 
 export default App;
