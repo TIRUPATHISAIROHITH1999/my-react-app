@@ -34,19 +34,27 @@ const Footer = () => {
 
             {/* Social Icons */}
             <div className="social-icons">
-              <FaTwitter className="social-icon" />
-              <FaFacebook className="social-icon" />
-              <FaInstagram className="social-icon" />
-              <FaLinkedin className="social-icon" />
-              <FaGithub className="social-icon" />
+              {/* <FaTwitter className="social-icon" /> */}
+              {/* <FaFacebook className="social-icon" /> */}
+              <a href="https://www.instagram.com/kagero_ryuzan/profilecard/?igsh=MTB2anFubGR1eDhrbw==" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'black' }}><FaInstagram className="social-icon" /></a>
+              {/* <FaInstagram className="social-icon" /> */}
+              {/* <FaLinkedin className="social-icon" /> */}
+              {/* <FaGithub className="social-icon" /> */}
+              <a href="https://www.instagram.com/kagero_ryuzan/profilecard/?igsh=MTB2anFubGR1eDhrbw==" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'black' }}><FaTwitter className="social-icon" /></a>
+
+              <a href="https://www.instagram.com/kagero_ryuzan/profilecard/?igsh=MTB2anFubGR1eDhrbw==" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'black' }}><FaFacebook className="social-icon" /></a>
+
+              <a href="https://www.instagram.com/kagero_ryuzan/profilecard/?igsh=MTB2anFubGR1eDhrbw==" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'black' }}><FaLinkedin className="social-icon" /></a>
+
+              <a href="https://www.instagram.com/kagero_ryuzan/profilecard/?igsh=MTB2anFubGR1eDhrbw==" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'black' }}><FaGithub className="social-icon" /></a>
             </div>
 
             {/* Instagram Link */}
-            <p><a to="https://www.instagram.com/kagero_ryuzan/profilecard/?igsh=MTB2anFubGR1eDhrbw==" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'black' }}></a></p>
+            {/* <p><a href="https://www.instagram.com/kagero_ryuzan/profilecard/?igsh=MTB2anFubGR1eDhrbw==" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'black' }}><b>INSTAGRAM</b></a></p> */}
           </Col>
 
           {/* Right side: Feedback Form with Name, Email, Phone, and Feedback */}
-          <Col xs={12} md={6} lg={3} className="d-flex flex-column justify-content-center text-center">
+          <Col xs={11} md={6} lg={3} className="d-flex flex-column justify-content-center text-center">
             <h5>Feedback</h5>
             <Form action="mailto:tsrohithfsd@gmail.com" method="post" enctype="text/plain">
               {/* Name Input */}
