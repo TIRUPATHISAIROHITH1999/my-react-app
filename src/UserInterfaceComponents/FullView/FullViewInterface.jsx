@@ -38,7 +38,7 @@ function FullViewInterface() {
         />
 
         <Route
-          path="/my-react-app"
+          path="/"
           element={<DataFetcher value={{ ImageUrls, setView, setViewLoad }} />}
         />
       </Routes>
