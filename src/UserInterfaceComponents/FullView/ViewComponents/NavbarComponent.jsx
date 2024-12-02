@@ -11,7 +11,7 @@ function NavbarComponent() {
         <Navbar.Brand href="#home">Ltts</Navbar.Brand>
         <Nav className="me-auto">
           {/* Use Link to navigate to routes */}
-          <Nav.Link as={Link} to="/">
+          <Nav.Link as={Link} to="my-react-app/">
             Home
           </Nav.Link>
           <Nav.Link as={Link} to="/wishlist">
